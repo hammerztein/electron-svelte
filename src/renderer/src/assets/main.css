@@ -1,0 +1,106 @@
+:root {
+	/* Spacing from 8px to 48px */
+	--spacing-1: 8px;
+	/* 8px */
+	--spacing-2: 16px;
+	/* 16px */
+	--spacing-3: 24px;
+	/* 24px */
+	--spacing-4: 32px;
+	/* 32px */
+	--spacing-5: 40px;
+	/* 40px */
+	--spacing-6: 48px;
+	/* 48px */
+
+	/* Grey background colors from 500 to 900 (Tailwind default grey scale) */
+	--bg-grey-500: #6B7280;
+	--bg-grey-600: #4B5563;
+	--bg-grey-700: #374151;
+	--bg-grey-800: #1F2937;
+	--bg-grey-900: #111827;
+
+	/* Blue background colors (300, 500, 700, 900) (Tailwind default blue scale) */
+	--bg-blue-300: #93C5FD;
+	--bg-blue-500: #3B82F6;
+	--bg-blue-700: #1D4ED8;
+	--bg-blue-900: #1E40AF;
+
+	/* Red background colors (300, 500, 700, 900) (Tailwind default red scale) */
+	--bg-red-300: #FECACA;
+	--bg-red-500: #F87171;
+	--bg-red-700: #B91C1C;
+	--bg-red-900: #7F1D1D;
+
+	/* Green background colors (300, 500, 700, 900) (Tailwind default green scale) */
+	--bg-green-300: #86EFAC;
+	--bg-green-500: #22C55E;
+	--bg-green-700: #16A34A;
+	--bg-green-900: #15803D;
+
+	/* Yellow background colors (300, 500, 700, 900) (Tailwind default yellow scale) */
+	--bg-yellow-300: #FDE047;
+	--bg-yellow-500: #F59E0B;
+	--bg-yellow-700: #D97706;
+	--bg-yellow-900: #92400E;
+
+	/* Text colors */
+	--text-clr-light: #e5e7eb;
+	--text-clr-medium: #6b7280;
+	--text-clr-dark: #374151;
+
+	/* Transition (Tailwind default transition-all duration) */
+	--transition-all: all 150ms ease-in-out;
+
+	/* Shadow medium (Tailwind default shadow-md) */
+	--shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+		0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100dvh;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--bg-grey-900);
+	color: var(--text-clr-light);
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	color: inherit;
+	font: inherit;
+}
+
+
+button, input, select, textarea {
+	font: inherit
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+svg {
+	height: 30px;
+	width: 30px;
+	fill: currentColor;
+}
+
+li {
+	list-style: none;
+}
+
+#app {
+	height: 100%;
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
